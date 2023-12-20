@@ -1,0 +1,13 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
+
+const baseClass = 'block xl:inline py-1 xl:py-0 xl:mr-12 text-xl hover:opacity-50';
+const inactiveClass = 'text-black ' + baseClass;
+const activeClass = 'font-semibold lg:font-extrabold xl:underline decoration-2 decoration-nu-purple underline-offset-8 ' + baseClass;
+---
+<a href="/" class={currentPath === "" ? activeClass : inactiveClass}>Home</a>
+<a href="/about" class={currentPath === "about" ? activeClass : inactiveClass}>About</a>
+<a href="/attend" class={currentPath === "attend" ? activeClass : inactiveClass}>Attend</a>
+<a href="/present" class={currentPath === "present" ? activeClass : inactiveClass}>Present</a>
+<a href="/schedule" class={currentPath === "schedule" ? activeClass : inactiveClass}>Schedule</a>

@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import Hero from '../assets/hero.png';
+---
+<Layout>
+	<div class="max-w-7xl mx-auto">
+		<section class="w-full text-black">
+			<div class="max-w-6xl mx-auto inline-block items-center p-3 pt-0 lg:flex lg:flex-wrap lg:pt-4">
+				<div class="lg:w-3/6">
+					<div class="mb-12 inline-block w-full flex-col lg:mt-0 lg:hidden lg:w-2/5">
+						<Image src={Hero} cwidth="250" alt="Hero" />
+					</div>
+
+					<h2 class="max-w-xl lg:text-[4.2em] text-3xl font-bold leading-none text-black inline-block">
+						In Early 2024 ...
+					</h2>
+					<div class="mt-6 max-w-2xl text-l text-[#404040]">
+						<p>Join us for a one-day conference to share our skills &amp; celebrate our achievements!</p>
+						<p class="mt-2">It'll be fun! <small class="text-xs">And also, it's mandatory.</small></p>
+					</div>
+
+					<div class="mt-10 flex justify-center flex-col lg:flex-row">
+						<a href="/schedule" class="bg-nu-purple text-2xl block items-center px-8 py-3 font-semibold tracking-tighter text-white border hover:opacity-75 lg:mr-6">
+							Check the Schedule
+						</a>
+
+						<a href="/about" class="bg-nu-purple text-2xl block items-center px-8 py-3 font-semibold tracking-tighter text-white hover:opacity-75 mt-5 lg:mt-0">
+							Learn More
+						</a>
+					</div>
+				</div>
+
+				<div class="mb-20 mt-44 hidden w-full flex-col lg:mt-12 lg:inline-block lg:w-3/6">
+					<Image src={Hero} class="rotate-6" width="350" alt="Hero" />
+				</div>
+			</div>
+		</section>
+	</div>
+</Layout>
