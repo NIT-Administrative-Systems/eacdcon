@@ -2,7 +2,7 @@
 import NavLinks from './NavLinks.astro';
 import '../css/app.css';
 import { Image } from 'astro:assets';
-import Logo from '../assets/N.jpeg';
+import Logo from '../assets/logo.png';
 
 interface Props {
     title?: string;
@@ -29,10 +29,9 @@ const headTitle = (title ? `${title} | ` : '') + 'EACDcon 2024';
         <div class="mt-1 xl:mb-16 flex items-center justify-between py-4 px-4 sm:mx-0 sm:mb-20 sm:px-0 md:px-6">
             <div class="mt-4 inline-block pb-4 pl-8">
                 <a href="/" class="align-middle text-5xl font-bold text-black">
-                    <Image src={Logo} alt="Logo" width="64" class="brand-icon inline mr-2" />
-                    <h1 class="brand inline">EACDcon</h1>
+                    <Image src={Logo} alt="EACDcon" width="192" class="brand-icon inline mr-2" />
                 </a>
-                <div class="hidden pl-14 align-middle xl:inline-block">
+                <div class="hidden pl-8 align-middle xl:inline-block">
                     <NavLinks />
                 </div>
             </div>

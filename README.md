@@ -10,3 +10,6 @@ It doesn't do anything on its own. It's static content.
 pnpm install
 pnpm dev
 ```
+
+## Credits
+The EACDcon logo was created by [Austin Vanderwilt](mailto:austinvanderwilt@gmail.com) on commission.
