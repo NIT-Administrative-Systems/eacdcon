@@ -1,0 +1,25 @@
+---
+interface Props {
+    title: string;
+    time: string;
+    duration: string;
+    presenters: string[];
+    isLast?: boolean;
+}
+
+Astro.props.isLast ??= false;
+---
+<div class={ 'mt-4 pb-4 flex flex-col lg:flex-row justify-between border-nu-dark-purple ' + (! Astro.props.isLast ? 'border-b' : '') }>
+    <div class="w-full lg:w-1/6 flex flex-row lg:flex-col justify-between lg:justify-normal pb-4 lg:pb-0">
+        <div class="text-2xl font-semibold">{ Astro.props.time }</div>
+        <div class="font-semibold lg:font-normal text-base lg:text-xs">{ Astro.props.duration }</div>
+    </div>
+    <div class="w-full lg:w-5/6 flex flex-col content-between">
+        <div class="text-2xl font-semibold">{ Astro.props.title }</div>
+        <div class="py-4 text-lg">
+            <slot />
+        </div>
+
+        <div class="text-sm">Presented by { Astro.props.presenters.join(', ') }</div>
+    </div>
+</div>

@@ -1,10 +1,30 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Talk from '../components/Talk.astro';
 ---
 <Layout>
     <div class="max-w-4xl mx-auto">
-        <section class="w-full text-black text-xl">
-            <h1 class="text-5xl pb-10 text-center">Coming Soon</h1>
+        <section class="w-full text-black">
+            <h1 class="text-5xl pb-10 text-center">Schedule</h1>
+            <div class="text-small lg:text-center mb-10">
+                <p>Times are shown in the America/Chicago timezone, and take place on February 27<sup>th</sup>, 2024.</p>
+            </div>
+
+            <div class="px-5 py-1 bg-white rounded-lg">
+                <Talk title="Extended Staff Meeting" time="9 AM" duration="1 hour 30 minutes" presenters={['NUIT Leadership']}>
+                    <p>Please join Sean Reynolds and other university leaders at the Allen Center for our quarterly NUIT staff meeting.</p>
+                </Talk>
+
+                <Talk title="Lunch" time="12:00 PM" duration="45 minutes" presenters={['EACD Leadership']}>
+                    <p>EACDcon kicks off with a catered lunch for all presenters &amp; attendees. Location & caterer TBA.</p>
+                </Talk>
+
+                <Talk title="What is architecture, anyway?" time="1:00 PM" duration="30 minutes" presenters={['Nick Evans']} isLast="`true`">
+                    <p>What exactly is "architecture"? What does the architect do? Should I be doing an architecture? All of these questions, and more, will be answered!</p>
+                    <p class="pt-4 text-xs">(this one is a placeholder and may not actually be a Thing)</p>
+                </Talk>
+            </div>
+
         </section>
     </div>
 </Layout>
