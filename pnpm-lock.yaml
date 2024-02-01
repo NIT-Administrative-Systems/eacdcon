@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@astrojs/alpinejs':
     specifier: ^0.3.2
-    version: 0.3.2(@types/alpinejs@3.13.5)(alpinejs@3.13.3)
+    version: 0.3.2(@types/alpinejs@3.13.6)(alpinejs@3.13.5)
   '@astrojs/check':
     specifier: ^0.3.4
     version: 0.3.4(typescript@5.3.3)
@@ -15,11 +15,11 @@ dependencies:
     specifier: ^5.1.0
     version: 5.1.0(astro@4.0.9)(tailwindcss@3.4.0)
   '@types/alpinejs':
+    specifier: ^3.13.6
+    version: 3.13.6
+  alpinejs:
     specifier: ^3.13.5
     version: 3.13.5
-  alpinejs:
-    specifier: ^3.13.3
-    version: 3.13.3
   astro:
     specifier: ^4.0.9
     version: 4.0.9(typescript@5.3.3)
@@ -48,14 +48,14 @@ packages:
       '@jridgewell/trace-mapping': 0.3.20
     dev: false
 
-  /@astrojs/alpinejs@0.3.2(@types/alpinejs@3.13.5)(alpinejs@3.13.3):
+  /@astrojs/alpinejs@0.3.2(@types/alpinejs@3.13.6)(alpinejs@3.13.5):
     resolution: {integrity: sha512-RzGFR1ZgoEtfMv2FypHuTQhCZ7QXeJRE49SyHxUZJf/tksO/HRwPikft8poTPamVbT4EqHPZtRWFFTAgp/u1Jw==}
     peerDependencies:
       '@types/alpinejs': ^3.0.0
       alpinejs: ^3.0.0
     dependencies:
-      '@types/alpinejs': 3.13.5
-      alpinejs: 3.13.3
+      '@types/alpinejs': 3.13.6
+      alpinejs: 3.13.5
     dev: false
 
   /@astrojs/check@0.3.4(typescript@5.3.3):
@@ -995,8 +995,8 @@ packages:
     dev: false
     optional: true
 
-  /@types/alpinejs@3.13.5:
-    resolution: {integrity: sha512-BSNTroRhmBkNiyd7ELK/5Boja92hnQMST6H4z1BqXKeMVzHjp9o1j5poqd5Tyhjd8oMFwxYC4I00eghfg2xrTA==}
+  /@types/alpinejs@3.13.6:
+    resolution: {integrity: sha512-BMi1/2uQz7mp30VFn69SzjN7YwQ0QzE4Hn3RMBt4iMpQeasdbMiImv1f5yvK1bYmvjIyG/YFg+CgPxbjIXZk0g==}
     dev: false
 
   /@types/babel__core@7.20.5:
@@ -1158,8 +1158,8 @@ packages:
     hasBin: true
     dev: false
 
-  /alpinejs@3.13.3:
-    resolution: {integrity: sha512-WZ6WQjkAOl+WdW/jukzNHq9zHFDNKmkk/x6WF7WdyNDD6woinrfXCVsZXm0galjbco+pEpYmJLtwlZwcOfIVdg==}
+  /alpinejs@3.13.5:
+    resolution: {integrity: sha512-1d2XeNGN+Zn7j4mUAKXtAgdc4/rLeadyTMWeJGXF5DzwawPBxwTiBhFFm6w/Ei8eJxUZeyNWWSD9zknfdz1kEw==}
     dependencies:
       '@vue/reactivity': 3.1.5
     dev: false
