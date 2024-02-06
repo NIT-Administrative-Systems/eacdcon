@@ -11,20 +11,58 @@ import Talk from '../components/Talk.astro';
             </div>
 
             <div class="px-5 py-1 bg-white rounded-lg">
-                <Talk title="Extended Staff Meeting" time="9 AM" duration="1 hour 30 minutes" presenters={['NUIT Leadership']}>
+                <Talk title="Extended Staff Meeting" time="9:00 AM" duration="1 hour 30 minutes" presenters={['NUIT Leadership']}>
                     <p>Please join Sean Reynolds and other university leaders at the Allen Center for our quarterly NUIT staff meeting.</p>
                 </Talk>
 
-                <Talk title="Lunch" time="12:00 PM" duration="45 minutes" presenters={['EACD Leadership']}>
+                <Talk title="Lunch" time="12:00 PM" duration="40 minutes" presenters={['EACD Leadership']}>
                     <p>EACDcon kicks off with a catered lunch for all presenters &amp; attendees in the adjacent conference room #218! <em>Caterer TBA.</em></p>
                 </Talk>
 
-                <Talk title="Impacts of Web Accessibility" time="2:00 PM" duration="45 minutes" presenters={['James R. Stachowiak', 'AccessibleNU Team']} isLast={ true }>
+                <Talk title="How to Prepare, Organize, and Write Beautiful and Useful Pull Requests" time="12:40 PM" duration="20 minutes" presenters={['Jacob Palmer']}>
+                    <p>A look at the process behind writing very pretty &mdash; and helpful &mdash; pull requests that are easy for anybody to review.</p>
+                    <p class="pt-2">Review techniques to create PRs that give a high-level preview of both the technical and visual aspects of the changes and how &amp; when to add visual aids like flowcharts or annotated gifs.</p>
+                </Talk>
+
+                <Talk title="Livewire with a Light Touch" time="1:00 PM" duration="20 minutes" presenters={['Nick Evans']}>
+                    <p>Review a technique to leverage the interactivity of Livewire without needing to have it take over your entire page.</p>
+                    <p class="pt-2">Laravel's typical controllers/validations can still be used as with a typical page, akin to adding a little interactivity with jQuery in the olden days.</p>
+                </Talk>
+
+                <Talk title="Navigating Data Complexity with TypeScript" time="1:20 PM" duration="20 minutes" presenters={['Danny Foster']}>
+                    <p>Discover the transformative role of TypeScript in application development for managing complex data structures and large codebases through practical examples. See how TypeScript, coupled with Zod, can enhance data integrity, particularly in validating data from external sources.</p>
+                    <p class="pt-2">Attendees will gain valuable insights on adopting TypeScript and Zod into both new and existing projects.</p>
+                </Talk>
+
+                <Talk title="Collation: How Hard Could It Be?" time="1:40 PM" duration="20 minutes" presenters={['Michael Campbell']}>
+                    <p>CollateHub is a microservice developed in 2023 to receive documents and collate them into a large, printable PDF, then deliver that to a serverless application.</p>
+                    <p class="pt-1">CollateHub was this developer's first experience in architecting and developing an application. This is a case study, covering the decision-making progress as the app matured and time crunched, highlighting key errors and successes along the way.</p>
+                </Talk>
+
+                <Talk title="Impacts of Web Accessibility" time="2:00 PM" duration="45 minutes" presenters={['James R. Stachowiak', 'AccessibleNU Team']}>
                     <p>Our special guest, <a href="https://www.northwestern.edu/accessiblenu/" class="underline text-nu-purple">AccessibleNU</a>, will showcase examples of good &amp; bad web design for people using EACD's applications with accessibility aids like <a href="https://www.freedomscientific.com/products/software/jaws/" class="underline text-nu-purple">JAWS</a>.</p>
                     <p class="pt-2">This will demonstrate the impacts of our web design decisions, and what fixing all those fiddly Axe errors is doing for our users.</p>
                 </Talk>
-            </div>
 
+                <Talk title="What Happens When You Type In a URL & Hit Enter" time="3:00 PM" duration="40 minutes" presenters={['Nick Evans']}>
+                    <p>An explanation of <em>all the things happening</em>, including details about networks, DNS, and certificates.</p>
+                    <p class="pt-2">Attendees should get a great understanding of networking concepts we typically do not have to deal with as developers, but do occasionally come up.</p>
+                </Talk>
+
+                <Talk title="Life as a Project Manager on a Technical Team" time="3:40 PM" duration="20 minutes" presenters={['Brian Daly']}>
+                    <p>A review of what it's like to be a project manager embedded into the development team.</p>
+                    <p class="pt-2">There's a lot happening just under the surface to facilitate Admin Systems projects. Take a look at the logistical support our project manager provides every day without you even knowing about it.</p>
+                </Talk>
+
+                <Talk title="From Parent to Child: Passing Data Flexibly with Livewire V3" time="4:00 PM" duration="20 minutes" presenters={['Naveed Ganjani']}>
+                    <p>This is a case study regarding an issue I'm currently working on for the GSP Pilot project. Due to the constraints of the project and Livewire V2, I had to create a two-step process for users to save and then submit a bulk action (student milestone updates) using a Livewire child component contained within another Livewire component.</p>
+                    <p class="pt-2">Livewire V3 is anticipated to improve the poor UX because it allows one to pass and edit data from parent to child components without having to emit events between them, thus simplifying the two-step process into one in this scenario.</p>
+                </Talk>
+
+                <Talk title="Accessing EventHub within a Mulesoft Integration: Just the Basics" time="4:20 PM" duration="20 minutes" presenters={['Jason Miller']} isLast={ true }>
+                    <p>Walk through the high-level concepts found in the custom Mulesoft template for accessing EventHub messages: message retrieval, message deletion, looping through multiple messages, etc.</p>
+                </Talk>
+            </div>
         </section>
     </div>
 </Layout>
